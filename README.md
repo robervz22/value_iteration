@@ -78,7 +78,7 @@ The transition probability functions and the expected reward function are define
 | $sick$  | $relax$|0.5| 0|
 | $sick$  | $party$|0.1| 2|
 
-We code these functions and pass them as arguments to the `value_iteration` function, then, we obtain the optimal policy and the corresponding optimal value function for this example.
+We code these functions and pass them as arguments to the `value_iteration` function together with the $S$ state space, and the $A$ action space. We use discount factor of $\gamma=0.8$. Thus, we obtain the optimal policy and the corresponding optimal value function for this example.
 ```python
 # Import the required module
 from value_iteration import value_iteration
