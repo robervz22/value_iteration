@@ -6,7 +6,7 @@ An implementation of the **Value Iteration Algorithm** for obtaining the optimal
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Examples](#examples)
+- [Example](#example)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -56,7 +56,7 @@ The function raises a warning if the maximum number of iterations is reached, ot
 Thus, to use the function for obtaining the optimal policy of a Markov Decision Process is necessary to provide as arguments:
 - The $S$ state space, and the $A$ action space, as `set` structures.
 - The expected reward function $R(s,a)$
-- The transition probability function $P(s',s,a)$ of moving to state $s'$ given that the agent is in state $s$ and does action $a$. 
+- The transition probability function $P(s'\mid s,a)$ of moving to state $s'$ given that the agent is in state $s$ and does action $a$. 
 
 The function returns:
 - The optimal policy for the corresponding state
